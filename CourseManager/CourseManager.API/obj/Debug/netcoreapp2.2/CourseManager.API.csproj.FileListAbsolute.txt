@@ -1,0 +1,15 @@
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\appsettings.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\CourseManager.API.deps.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\CourseManager.API.runtimeconfig.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\CourseManager.API.runtimeconfig.dev.json
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\CourseManager.API.dll
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp2.2\CourseManager.API.pdb
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.RazorAssemblyInfo.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.RazorAssemblyInfo.cs
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.AssemblyInfoInputs.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.AssemblyInfo.cs
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.RazorTargetAssemblyInfo.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.dll
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp2.2\CourseManager.API.pdb
