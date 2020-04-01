@@ -1,4 +1,5 @@
 using CourseManager.API.DbContexts;
+using CourseManager.API.Entities;
 using CourseManager.API.Services;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -56,6 +57,61 @@ namespace CourseManager.API.Test
                 //Assert
                 Assert.Equal(3, authors.Count());
 
+
+            }
+        }
+
+        [Fact]
+
+        public void GetAuthor_EmptyGuid_ThrowsArgumentException()
+        {
+            // Arrange
+
+            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase("CourseDatabaseForTesting").Options;
+
+            using (var context = new CourseContext(options))
+            {
+                var authorRepo = new AuthorRepository(context);
+
+                // Act
+                Assert.Throws<ArgumentException>(() => authorRepo.GetAuthor(Guid.Empty));
+            }
+        }
+
+        [Fact]
+
+        public void AddAuthor_AuthorWithoutCountryId_AuthorHasBEAsCountryId()
+        {
+            // Arrange
+
+            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase("CourseDatabaseForTesting").Options;
+
+
+            using (var context = new CourseContext(options))
+            {
+                context.Countries.Add(new Entities.Country()
+                {
+                    Id = "BE",
+                    Description = "Belgium"
+                });
+
+                context.SaveChanges();
+
+                var authorRepo = new AuthorRepository(context);
+
+                var authorToAdd = new Author()
+                {
+                    FirstName = "Kevin",
+                    LastName = "Dockx",
+                    Id = Guid.Parse("d84d3d7e-3fbc-4956-84a5-5c57c2d86d7b")
+                };
+
+                authorRepo.AddAuthor(authorToAdd);
+                authorRepo.SaveChanges();
+
+                var addedAuthor = authorRepo.GetAuthor(Guid.Parse("d84d3d7e-3fbc-4956-84a5-5c57c2d86d7b"));
+
+                Assert.Equal("BE", addedAuthor.CountryId);
 
             }
         }

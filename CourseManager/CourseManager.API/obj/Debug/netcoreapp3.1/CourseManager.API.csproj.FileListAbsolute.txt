@@ -47,3 +47,4 @@ D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreap
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.csproj.CopyComplete
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.pdb
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.csprojAssemblyReference.cache
