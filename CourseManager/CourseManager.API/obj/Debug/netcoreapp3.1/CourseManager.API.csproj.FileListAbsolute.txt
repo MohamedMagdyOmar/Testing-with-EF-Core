@@ -1,3 +1,8 @@
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\staticwebassets\CourseManager.API.StaticWebAssets.Manifest.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\staticwebassets\CourseManager.API.StaticWebAssets.xml
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.AssemblyInfoInputs.cache
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.AssemblyInfo.cs
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -6,7 +11,6 @@ D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreap
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\CourseManager.API.runtimeconfig.json
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\CourseManager.API.runtimeconfig.dev.json
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\CourseManager.API.dll
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\CourseManager.API.pdb
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -37,13 +41,10 @@ D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreap
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.csprojAssemblyReference.cache
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\staticwebassets\CourseManager.API.StaticWebAssets.Manifest.cache
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\staticwebassets\CourseManager.API.StaticWebAssets.xml
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.MvcApplicationPartsAssemblyInfo.cache
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.AssemblyInfoInputs.cache
-D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.AssemblyInfo.cs
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.RazorTargetAssemblyInfo.cache
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.csproj.CopyComplete
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\CourseManager.API.pdb
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.csprojAssemblyReference.cache
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.dll
 D:\Repo\Testing-with-EF-Core\CourseManager\CourseManager.API\obj\Debug\netcoreapp3.1\CourseManager.API.pdb
