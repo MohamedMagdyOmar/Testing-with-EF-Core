@@ -16,7 +16,7 @@ namespace CourseManager.API.Test
         {
             // Arrange
 
-            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase("CourseDatabaseForTesting").Options;
+            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase($"CourseDatabaseForTesting {Guid.NewGuid()}").Options;
 
             using (var context = new CourseContext(options))
             {
@@ -48,7 +48,10 @@ namespace CourseManager.API.Test
                 { FirstName = "Deborah", LastName = "Kurata", CountryId = "US" });
 
                 context.SaveChanges();
+            }
 
+            using (var context = new CourseContext(options))
+            {
                 var authorRepo = new AuthorRepository(context);
 
                 // Act
@@ -56,9 +59,8 @@ namespace CourseManager.API.Test
 
                 //Assert
                 Assert.Equal(3, authors.Count());
-
-
             }
+
         }
 
         [Fact]
@@ -67,7 +69,7 @@ namespace CourseManager.API.Test
         {
             // Arrange
 
-            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase("CourseDatabaseForTesting").Options;
+            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase($"CourseDatabaseForTesting {Guid.NewGuid()}").Options;
 
             using (var context = new CourseContext(options))
             {
@@ -84,7 +86,7 @@ namespace CourseManager.API.Test
         {
             // Arrange
 
-            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase("CourseDatabaseForTesting").Options;
+            var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase($"CourseDatabaseForTesting {Guid.NewGuid()}").Options;
 
 
             using (var context = new CourseContext(options))
@@ -96,7 +98,10 @@ namespace CourseManager.API.Test
                 });
 
                 context.SaveChanges();
+            }
 
+            using (var context = new CourseContext(options))
+            {
                 var authorRepo = new AuthorRepository(context);
 
                 var authorToAdd = new Author()
@@ -108,12 +113,16 @@ namespace CourseManager.API.Test
 
                 authorRepo.AddAuthor(authorToAdd);
                 authorRepo.SaveChanges();
+            }
+
+            using (var context = new CourseContext(options))
+            {
+                var authorRepo = new AuthorRepository(context);
 
                 var addedAuthor = authorRepo.GetAuthor(Guid.Parse("d84d3d7e-3fbc-4956-84a5-5c57c2d86d7b"));
 
                 Assert.Equal("BE", addedAuthor.CountryId);
-
-            }
+            }     
         }
     }
 }
