@@ -3,14 +3,24 @@ using CourseManager.API.Entities;
 using CourseManager.API.Services;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace CourseManager.API.Test
 {
     public class AuthorRepositoryTests
     {
+        private readonly ITestOutputHelper _output;
+
+        public AuthorRepositoryTests(ITestOutputHelper output)
+        {
+            _output = output;
+        }
         [Fact]
         // MethodNameUnderTest_State_ExpectedResult
         public void GetAuthors_PageSizeIsThree_ReturnsThreeAuthors()
@@ -98,12 +108,20 @@ namespace CourseManager.API.Test
         public void AddAuthor_AuthorWithoutCountryId_AuthorHasBEAsCountryId()
         {
             // Arrange
+            //var logs = new List<string>();
 
             // we commented this line because we are going to use Sqlite instead of ImMemory Provider
             // var options = new DbContextOptionsBuilder<CourseContext>().UseInMemoryDatabase($"CourseDatabaseForTesting {Guid.NewGuid()}").Options;
             var connectionStringBuilder = new SqliteConnectionStringBuilder { DataSource = ":memory:" };
             var connection = new SqliteConnection(connectionStringBuilder.ToString());
-            var options = new DbContextOptionsBuilder<CourseContext>().UseSqlite(connection).Options;
+            var options = new DbContextOptionsBuilder<CourseContext>().UseLoggerFactory(new LoggerFactory(
+                new[] {new LogToActionLoggerProvider((log) => {
+                    //logs.Add(log);
+                    //Debug.WriteLine(log);
+                    // this will makes you see the actual SQL Server Queries that has been executed
+                    _output.WriteLine(log);
+                })}
+                )).UseSqlite(connection).Options;
 
             using (var context = new CourseContext(options))
             {
